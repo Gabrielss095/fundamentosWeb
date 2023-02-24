@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contato</title>
+    <title>Porfifolio</title>
+    <link rel="shortcut icon" href="assets/icons/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <h1>Entre em contato comigo</h1>
-    </ul>
+    <div class="container2">
+        <ul class="menu2">
+            <li>Gabriel Santiago</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <hr class="linha">
+        <div class="sessao">
+            <div class="conteudo">
+                <label>Nome:</label>
+                <input type="text" name="nome">
+    
+                <label>Email:</label>
+                <input type="email" name="email">
+    
+                <label>Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+    
+                <button type="button" name="butao">Enviar</button>
+            </div>
+            <div class="conteudo2">
+                <h2>Endereço</h2>
+                <p>Rua Francisco Caminhoa 65</p>
+                <p>São Paulo- SP</p>
+    
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.85305169739!2d-46.788305485381784!3d-23.645433070586634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53827b9f0eb7%3A0x14773d8165bf9c99!2sRua%20Francisco%20Caminhoa%2C%2065%20-%20Jardim%20Mitsutani%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005791-070!5e0!3m2!1spt-BR!2sbr!4v1677174657280!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+        <hr class="linha">
+        <footer class="rodape">
+            <ul>
+                <li><a href="https://github.com/Gabrielss095" target="_blank"><img src="assets/icons/github.png"></a></li>
 
-        <form>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome"><br><br>
+                <li><a href="https://www.linkedin.com/in/gabriel-santiago-desenvolvedor/" target="_blank"><img src="assets/icons/linkedin.png"></a></li>
 
-            <label for="email">Email: </label>
-            <input type="email" id="email"><br><br>
-
-            <label for="assunto">Assunto: </label><br>
-            <textarea name="assunto" id="assunto" cols="28" rows="5"></textarea>
-
-            <br><br>
-            <button>Enviar</button>
-        </form>
-
-        <h2>Endereço: </h2>
-        <p>Broadway, 1515</p>
-        <p> New York, Estados Unidos</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1676596225953!5m2!1spt-BR!2sbr!6m8!1m7!1s3IkFxXwD8H-DB_TTjHVHOQ!2m2!1d40.75754646642466!2d-73.98582392819237!3f317.96939283003684!4f1.0251187663468926!5f0.7820865974627469"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <li><a href="https://wa.me/5511981258430?text=Ol%C3%A1%2C+seja+bem+vindo." target="_blank"><img src="assets/icons/whatsapp.png"></a></li>
+            </ul>
+        </footer>
+    </div> <!-- container2-->
 </body>
 </html>
+<!--
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D-g5kHkqNQ4" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+ -->
