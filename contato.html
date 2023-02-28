@@ -17,24 +17,28 @@
         </ul>
         <hr class="linha">
         <div class="sessao">
-            <div class="conteudo">
-                <label>Nome:</label>
-                <input type="text" name="nome">
+            <form class="conteudo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" onkeyup='validaNome()'> <!--OnkeyUp chama a função ao digitar-->
+                <div id="txtNome"></div>
     
-                <label>Email:</label>
-                <input type="email" name="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
     
-                <label>Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
     
-                <button type="button" name="butao">Enviar</button>
-            </div>
+                <button onclick="enviar()">Enviar</button>
+            </form>
             <div class="conteudo2">
                 <h2>Endereço</h2>
                 <p>Rua Francisco Caminhoa 65</p>
                 <p>São Paulo- SP</p>
     
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.85305169739!2d-46.788305485381784!3d-23.645433070586634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53827b9f0eb7%3A0x14773d8165bf9c99!2sRua%20Francisco%20Caminhoa%2C%2065%20-%20Jardim%20Mitsutani%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005791-070!5e0!3m2!1spt-BR!2sbr!4v1677174657280!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.85305169739!2d-46.788305485381784!3d-23.645433070586634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53827b9f0eb7%3A0x14773d8165bf9c99!2sRua%20Francisco%20Caminhoa%2C%2065%20-%20Jardim%20Mitsutani%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005791-070!5e0!3m2!1spt-BR!2sbr!4v1677174657280!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
             </div>
             
         </div>
@@ -49,10 +53,6 @@
             </ul>
         </footer>
     </div> <!-- container2-->
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
-<!--
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/D-g5kHkqNQ4" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
- -->
